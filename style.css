@@ -1,3 +1,13 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 #welcome-section {
 	content:'';
 	height: 100vh;
@@ -7,6 +17,24 @@
 	background-repeat: no-repeat;
 	background-position: center;
     display: block;
+    color: white;
+}
+
+.title {
+	position: absolute;
+	z-index: 1;
+	top: 0%;
+	left: 48%;
+	margin-top: 105px;
+	margin-left: -140px;
+	width: 300px;
+	height: 350px;
+	text-align: center;
+	transition: all 1000ms;
+}
+
+.welcome .title {
+	font-size: 2em;
 }
 
 body {
@@ -36,15 +64,40 @@ nav ul {
  
 #navbar {
     overflow: hidden;
-    background-color: white;
-    opacity: 0.8;
-    color: black;
+    background-color: black;
+    opacity: 0.3;
+    color: white;
     position: fixed; 
     top: 0; 
     width: 100%; 
     z-index: 3;
     display: flex;
     
+}
+li a {
+	color: white;
+	text-decoration: none;
+}
+#navbar li {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 4;
+}
+
+#navbar li:hover {
+    background: white;
+    color: black;
+    font-size: 1.2em;
+    transition: all 400ms;
+}
+
+li a:hover {
+	background: white;
+    color: black;
 }
 
 #projects .thumbnail {            /*project .project-tile .thumbnail*/
@@ -86,8 +139,8 @@ nav ul {
 
   .thumbnail {
 
-    width: 290px;
-    height: 320px;
-    border-bottom: 2px solid black;
+    width: 300px;
+    height: 300px;
+    /*border-bottom: 2px solid black;*/
 
   }
