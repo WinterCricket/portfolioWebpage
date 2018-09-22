@@ -27,7 +27,25 @@ a {
     color: #000;
     text-decoration: none;
 }
-
+nav ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ 
+#navbar {
+    overflow: hidden;
+    background-color: white;
+    opacity: 0.8;
+    color: black;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 3;
+    display: flex;
+    
+}
 
 #projects .thumbnail {            /*project .project-tile .thumbnail*/
 	max-width: 960px;
